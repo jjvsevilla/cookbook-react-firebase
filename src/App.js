@@ -3,6 +3,7 @@ import reactLogo from './images/react.svg';
 import firebaseLogo from './images/firebase.svg';
 import './App.css';
 import * as firebase from 'firebase';
+import FileUpload from './components/FileUpload';
 
 class App extends Component {
   constructor() {
@@ -36,6 +37,8 @@ class App extends Component {
           <br/>
           <span>current speed: { this.state.speed }</span>
         </p>
+        <br/>
+        <FileUpload />
       </div>
     );
   }
